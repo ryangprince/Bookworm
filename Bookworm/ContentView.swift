@@ -7,15 +7,49 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    
+    @State private var showingAddBookView = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(books) { book in
+                    NavigationLink {
+                        Text(book.title ?? "Unknown title")
+                    } label: {
+                        HStack {
+                            EmojiRatingView(rating: book.rating)
+                                .font(.largeTitle)
+                            
+                            VStack(alignment: .leading) {
+                                Text(book.title ?? "Unknown Title")
+                                    .font(.headline)
+                                
+                                Text(book.author ?? "Unknown Author")
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Bookworm")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingAddBookView.toggle()
+                    } label: {
+                        Label("Add Book", systemImage: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingAddBookView) {
+                AddBookView()
+            }
         }
-        .padding()
     }
 }
 
