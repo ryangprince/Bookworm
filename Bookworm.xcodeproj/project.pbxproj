@@ -16,6 +16,7 @@
 		AE90498228F78BD800B46E42 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90498128F78BD800B46E42 /* AddBookView.swift */; };
 		AE90498428F7923600B46E42 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90498328F7923600B46E42 /* RatingView.swift */; };
 		AE90498628F796E800B46E42 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90498528F796E800B46E42 /* EmojiRatingView.swift */; };
+		AE90498828F7AA1C00B46E42 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90498728F7AA1C00B46E42 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AE90498128F78BD800B46E42 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		AE90498328F7923600B46E42 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AE90498528F796E800B46E42 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		AE90498728F7AA1C00B46E42 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AE90498528F796E800B46E42 /* EmojiRatingView.swift */,
 				AE90498328F7923600B46E42 /* RatingView.swift */,
 				AE90497F28F7822400B46E42 /* DataController.swift */,
+				AE90498728F7AA1C00B46E42 /* BookDetailView.swift */,
 				AE90497128F76FD300B46E42 /* Assets.xcassets */,
 				AE90497328F76FD300B46E42 /* Bookworm.entitlements */,
 				AE90497428F76FD300B46E42 /* Preview Content */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE90498828F7AA1C00B46E42 /* BookDetailView.swift in Sources */,
 				AE90497028F76FD100B46E42 /* ContentView.swift in Sources */,
 				AE90498028F7822400B46E42 /* DataController.swift in Sources */,
 				AE90498628F796E800B46E42 /* EmojiRatingView.swift in Sources */,
